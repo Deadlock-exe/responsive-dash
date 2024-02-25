@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
+import 'package:responsive_dash/theme/theme.dart';
 import 'package:responsive_dash/widgets/appbar.dart';
 import 'package:responsive_dash/widgets/box.dart';
 import 'package:responsive_dash/widgets/drawer.dart';
@@ -18,7 +17,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: bgColor,
       appBar: myAppBar,
       body: Row(
         children: [
@@ -61,7 +60,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                   child: Padding(
                     padding: const EdgeInsets.all(20),
                     child: Container(
-                      color: Colors.grey[500],
+                      color: primaryColor,
                     ),
                   ),
                 )

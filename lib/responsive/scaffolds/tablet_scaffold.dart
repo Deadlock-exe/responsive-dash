@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash/theme/theme.dart';
 import 'package:responsive_dash/widgets/appbar.dart';
 import 'package:responsive_dash/widgets/box.dart';
 import 'package:responsive_dash/widgets/drawer.dart';
@@ -16,7 +17,7 @@ class _TabletScaffoldState extends State<TabletScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: bgColor,
       appBar: myAppBar,
       drawer: const MyDrawer(),
       body: SingleChildScrollView(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash/theme/theme.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -7,9 +8,9 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       surfaceTintColor: Colors.transparent,
-      shadowColor: Colors.grey[500],
+      shadowColor: primaryColor,
       shape: const ContinuousRectangleBorder(),
-      backgroundColor: Colors.grey[300],
+      backgroundColor: bgColor,
       child: Column(
         children: [
           const SizedBox(
@@ -19,59 +20,59 @@ class MyDrawer extends StatelessWidget {
             margin: const EdgeInsetsDirectional.only(bottom: 25),
             child: Icon(
               Icons.person,
-              color: Colors.grey[600],
+              color: secondaryColor,
               size: 120,
             ),
           ),
           ListTile(
             leading: Icon(
               Icons.home,
-              color: Colors.grey[600],
+              color: secondaryColor,
             ),
             title: Text(
               "DASHBOARD",
               style: TextStyle(
                 letterSpacing: 4,
-                color: Colors.grey[600],
+                color: secondaryColor,
               ),
             ),
           ),
           ListTile(
             leading: Icon(
               Icons.chat,
-              color: Colors.grey[600],
+              color: secondaryColor,
             ),
             title: Text(
               "MESSAGE",
               style: TextStyle(
                 letterSpacing: 4,
-                color: Colors.grey[600],
+                color: secondaryColor,
               ),
             ),
           ),
           ListTile(
             leading: Icon(
               Icons.settings,
-              color: Colors.grey[600],
+              color: secondaryColor,
             ),
             title: Text(
               "SETTINGS",
               style: TextStyle(
                 letterSpacing: 4,
-                color: Colors.grey[600],
+                color: secondaryColor,
               ),
             ),
           ),
           ListTile(
             leading: Icon(
               Icons.logout,
-              color: Colors.grey[600],
+              color: secondaryColor,
             ),
             title: Text(
               "LOGOUT",
               style: TextStyle(
                 letterSpacing: 4,
-                color: Colors.grey[600],
+                color: secondaryColor,
               ),
             ),
           ),
