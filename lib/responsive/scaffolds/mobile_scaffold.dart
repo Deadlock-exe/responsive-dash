@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash/theme/theme.dart';
 import 'package:responsive_dash/widgets/appbar.dart';
 import 'package:responsive_dash/widgets/box.dart';
 import 'package:responsive_dash/widgets/drawer.dart';
@@ -17,8 +16,8 @@ class _MobileScaffoldState extends State<MobileScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bgColor,
-      appBar: myAppBar,
+      backgroundColor: Theme.of(context).colorScheme.background,
+      appBar: const MyAppBar(),
       drawer: const MyDrawer(),
       body: SingleChildScrollView(
         child: Column(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash/theme/theme.dart';
 import 'package:responsive_dash/widgets/appbar.dart';
 import 'package:responsive_dash/widgets/box.dart';
 import 'package:responsive_dash/widgets/drawer.dart';
@@ -17,8 +16,8 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: bgColor,
-      appBar: myAppBar,
+      backgroundColor: Theme.of(context).colorScheme.background,
+      appBar: const MyAppBar(),
       body: Row(
         children: [
           // open drawer
@@ -60,7 +59,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                   child: Padding(
                     padding: const EdgeInsets.all(20),
                     child: Container(
-                      color: primaryColor,
+                      color: Theme.of(context).colorScheme.primary,
                     ),
                   ),
                 )

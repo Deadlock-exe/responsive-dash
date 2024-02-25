@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash/theme/theme.dart';
 
-var myAppBar = AppBar(
-  backgroundColor: primaryColor,
-  surfaceTintColor: Colors.transparent,
-);
+class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const MyAppBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      backgroundColor: Theme.of(context).colorScheme.primary,
+    );
+  }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+}

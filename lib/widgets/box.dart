@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash/theme/theme.dart';
 
 class MyBox extends StatelessWidget {
   const MyBox({super.key});
@@ -7,7 +6,7 @@ class MyBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: primaryColor,
+      color: Theme.of(context).colorScheme.primary,
       margin: const EdgeInsets.all(10),
     );
   }

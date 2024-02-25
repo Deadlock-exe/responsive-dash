@@ -1,5 +1,19 @@
 import 'package:flutter/material.dart';
 
-var bgColor = Colors.grey[300];
-var primaryColor = Colors.grey[400];
-var secondaryColor = Colors.grey[500];
+ThemeData lightMode = ThemeData(
+  brightness: Brightness.light,
+  colorScheme: ColorScheme.light(
+    background: Colors.grey.shade300,
+    primary: Colors.grey.shade400,
+    secondary: Colors.grey.shade500,
+  ),
+);
+
+ThemeData darkMode = ThemeData(
+  brightness: Brightness.dark,
+  colorScheme: ColorScheme.dark(
+    background: Colors.grey.shade900,
+    primary: Colors.grey.shade800,
+    secondary: Colors.grey.shade700,
+  ),
+);
